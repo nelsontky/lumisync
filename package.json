@@ -8,8 +8,10 @@
     "react-scripts": "^3.3.0"
   },
   "dependencies": {
+    "axios": "^0.19.1",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-dom": "^16.1.1",
+    "request": "^2.88.0"
   },
   "homepage": "./",
   "main": "src/electron-starter.js",
