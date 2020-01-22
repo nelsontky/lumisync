@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import authorization from "./luminusApi/getBearer";
+import getBearer from "./luminusApi/getBearer";
 
 
 class Login extends React.Component {
@@ -25,7 +25,8 @@ class Login extends React.Component {
 
   async handleSubmit(event) {
     event.preventDefault();
-    await authorization(this.state.id, this.state.password);
+    const bearer = await getBearer(this.state.id, this.state.password);
+    console.log(bearer);
   }
 
   render() {
